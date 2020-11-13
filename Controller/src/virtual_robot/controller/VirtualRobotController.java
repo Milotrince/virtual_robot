@@ -731,10 +731,10 @@ public class VirtualRobotController {
      * Base class for OpMode.
      */
     public class OpModeBase {
-        public final HardwareMap hardwareMap;
-        public final Gamepad gamepad1;
-        public final Gamepad gamepad2;
-        public final Telemetry telemetry;
+        protected final HardwareMap hardwareMap;
+        protected final Gamepad gamepad1;
+        protected final Gamepad gamepad2;
+        protected final Telemetry telemetry;
 
         public OpModeBase() {
             hardwareMap = VirtualRobotController.this.hardwareMap;
